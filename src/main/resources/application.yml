@@ -1,0 +1,23 @@
+bot:
+  token: 6666866418:AAELLoneNBLB1rlW85dttCHw_KCMTPgXlro
+  name: FintrackAPIBot
+#  owner: 1164540592
+
+#cron:
+#  scheduler: 0 * * * * *
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo_telegram_bot
+    username: postgres
+    password: krya
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Set this to "update" to automatically create/update the database schema
+    show-sql: true # Set this to true to see SQL queries in the console for debugging
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8000
